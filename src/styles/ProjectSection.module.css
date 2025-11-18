@@ -1,0 +1,22 @@
+/* src/styles/ProjectSection.module.css */
+.projectGrid {
+    display: grid;
+    /* 💡 수정: 2개의 열을 균등하게 분할하도록 명시 */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* 💡 모바일 반응형: 화면이 768px보다 작아지면 1열로 변경 */
+@media (max-width: 768px) { 
+    .projectGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+/* 기존 600px 미디어 쿼리는 768px로 통합하거나 삭제 가능합니다. */
+/* @media (max-width: 600px) {
+    .projectGrid {
+        grid-template-columns: 1fr;
+    }
+} */

@@ -1,0 +1,110 @@
+/* src/styles/Modal.module.css */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 900px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: modalFadeIn 0.3s ease-out; /* 충돌 방지를 위해 이름 변경 */
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2em;
+    font-weight: 300;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #9ca3af;
+    transition: color 0.2s;
+}
+
+.closeButton:hover {
+    color: #1f2937;
+}
+
+.modalTitle {
+    font-size: 2em;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #3b82f6;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.galleryWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 15px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.galleryImage {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.summary {
+    font-style: italic;
+    color: #6b7280;
+}
+
+.detailText {
+    white-space: pre-wrap; /* 줄바꿈 유지 */
+    line-height: 1.8;
+    color: #374151;
+    background-color: #f7f9fc;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #3b82f6;
+}
+
+.externalLink {
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: 700;
+    color: #1e3a8a;
+    transition: color 0.2s;
+}
+
+.externalLink:hover {
+    color: #3b82f6;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}

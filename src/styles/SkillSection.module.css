@@ -1,0 +1,15 @@
+/* src/styles/SkillSection.module.css */
+.skillGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    /* 💡 수정: 그리드 간격을 30px에서 40px로 증가 */
+    gap: 40px; 
+    margin-top: 20px;
+}
+/* ... (미디어 쿼리도 gap을 40px에 맞춰 조정) ... */
+@media (max-width: 992px) { 
+    .skillGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px; /* 태블릿 크기 간격 */
+    }
+}
