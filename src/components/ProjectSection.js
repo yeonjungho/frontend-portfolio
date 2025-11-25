@@ -28,7 +28,7 @@ const projectData = [
     { 
         title: 'FitSweat-운동정보제공웹사이트', 
         description: '운동에 괸한 정보를 시연영상과 함께 제공,정보공유 게시판, 등 제공', 
-        imagePath: ['/피트1.png','/피트2.png','/피트3.png'], 
+        imagePath: ['p1.PNG','/p2.png','/p3.png'], 
         linkText: '프로젝트 상세보기',
         detailedDescription: `FitSweat은 사용자가 다양한 운동 정보를 쉽게 찾고 공유할 수 있는 웹사이트입니다.
 - 콘텐츠: 전문 트레이너의 시연 영상 및 운동 가이드 제공.
