@@ -78,9 +78,9 @@ const ProjectCard = ({ title, description, imagePath, linkText, detailedDescript
                         {/* 프로젝트별 부연 설명 표시 */}
                         <p className={modalStyles.detailText}>{detailedDescription}</p>
 
-                        <a href="#!" className={modalStyles.externalLink}>
-                            Github / 배포 링크 바로가기 →
-                        </a>
+                       
+                        
+                        
                     </div>
                 </div>
             )}
