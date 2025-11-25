@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
 
+  "homepage": "https://yeonjungho.github.io/jungho-portfolio", 
   
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
