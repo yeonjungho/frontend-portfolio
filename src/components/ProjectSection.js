@@ -1,4 +1,4 @@
-// src/components/ProjectSection.js
+
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import styles from '../styles/ProjectSection.module.css';
@@ -53,7 +53,7 @@ const ProjectSection = () => {
                 <h2 className={sectionStyles.sectionTitle}>Projects</h2>
                 <div className={styles.projectGrid}>
                     {projectData.map((project, index) => (
-                        // 💡 애니메이션 딜레이를 적용하기 위해 div로 감싸고 style 속성 부여
+                        
                         <div 
                             key={index}
                             style={{ 

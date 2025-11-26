@@ -1,4 +1,4 @@
-/* src/styles/global.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;800&display=swap');
 
 * {
@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #f7f9fc; /* 배경색: 밝은 회색 */
+    background-color: #f7f9fc; 
     line-height: 1.6;
 }
 

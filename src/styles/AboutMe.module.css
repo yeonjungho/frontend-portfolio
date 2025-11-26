@@ -1,18 +1,18 @@
-/* src/styles/AboutMe.module.css */
+
 .contentWrapper {
     display: flex;
     gap: 60px;
-    align-items: center; /* 수직 중앙 정렬 */
+    align-items: center; 
 }
 
 .imageContainer {
     flex-shrink: 0;
     width: 280px; 
     height: 280px; 
-    border-radius: 50%; /* 다시 원형으로 변경 (깔끔함 강조) */
+    border-radius: 50%; 
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
-    border: 5px solid #3b82f6; /* 강조색 테두리 */
+    border: 5px solid #3b82f6; 
 }
 
 .characterImage {

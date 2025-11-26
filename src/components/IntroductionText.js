@@ -1,9 +1,8 @@
-// src/components/IntroductionText.js
 import React from 'react';
 import styles from '../styles/AboutMe.module.css'; 
 
 const IntroductionText = () => {
-    // 소주제 스타일 정의 (기존 스타일 유지)
+    
     const subtitleStyle = {
         fontSize: '1.5em',
         fontWeight: '700',
@@ -14,7 +13,7 @@ const IntroductionText = () => {
         paddingLeft: '10px'
     };
 
-    // 본문 스타일 정의 (기존 스타일 유지)
+   
     const bodyStyle = {
         lineHeight: 1.8,
         fontSize: '1.05em',
@@ -39,7 +38,7 @@ const IntroductionText = () => {
                     boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
                 }}>
                     
-                    {/* 1. 지원 동기 */}
+                   
                     <h3 style={subtitleStyle}>1. 지원 동기: 책임감을 바탕으로 한 성장 의지</h3>
                     <p style={bodyStyle}>
                         저는 ‘내가 부족해서 남에게 피해 주는 것을 피하고 싶다’는 마음가짐으로 항상 책임감 있게 일해왔습니다. 함께 일하는 동료들에게 부담을 주지 않기 위해, 스스로 필요한 기술과 지식을 미리 학습하고 실무에 바로 투입되더라도 지장이 없도록 준비해왔습니다.
@@ -47,7 +46,7 @@ const IntroductionText = () => {
                         저는 단순히 주어진 업무를 수행하는 데 그치지 않고, 팀과 회사에 실질적인 도움이 되는 구성원이 되기 위해 꾸준히 제 역량을 가꾸고 있습니다. 새로운 환경이나 업무에도 두려움 없이 도전하며, 빠르게 적응할 수 있도록 적극적으로 질문하고 먼저 움직이는 자세를 갖추고자 노력합니다. 부족한 점은 인정하고 개선하려는 태도, 그리고 책임감을 바탕으로 맡은 일에 최선을 다하는 저의 자세가 귀사의 조직문화와 잘 맞을 것이라 생각하여 지원하게 되었습니다.
                     </p>
 
-                    {/* 2. 대학 생활 (학업 및 학습 과정) */}
+                    
                     <h3 style={subtitleStyle}>2. 대학 생활: 책임감과 협업을 통한 성장</h3>
                     <p style={bodyStyle}>
                         대학생활에서 배운 것은 책임감입니다. 맡은 일은 끝까지 책임지고 마무리하려고 최선을 다했습니다. 대학 시절 팀 프로젝트나 팀 과제를 진행할 때는 주로 팀장을 맡아 팀원 간 의견 조율, 일정 관리, 역할 분담 등 여러 업무를 책임감 있게 수행하며 프로젝트를 성공적으로 마칠 수 있었습니다.
@@ -58,7 +57,7 @@ const IntroductionText = () => {
                         가장 기억에 남고, 저의 기술적 능력과 협업 능력을 키울 수 있었던 프로젝트는 React와 Spring Boot, MySQL을 이용한 S/W Project였습니다. 이전까지 프로젝트 진행 경험이 부족하여 팀 구성부터 역할 분담, 개발 방향 설정까지 모든 것이 막막했지만, 팀원들과의 적극적인 소통을 통해 크고 작은 문제를 해결하며 협업 능력을 키울 수 있었습니다. 앞으로도 팀원들과 적극적으로 협업하고, 함께 성장하는 개발자로 발전해 나가겠습니다.
                     </p>
 
-                    {/* 3. 주요 프로젝트 경험 */}
+                    
                     <h3 style={subtitleStyle}>3. 주요 프로젝트 경험</h3>
                     <ul style={{ ...bodyStyle, listStyleType: 'none', paddingLeft: '0', marginBottom: '0' }}> 
                         <li style={{ marginBottom: '20px' }}>

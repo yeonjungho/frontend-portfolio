@@ -1,12 +1,11 @@
-// src/components/ProjectCard.js
+
 import React, { useState } from 'react';
 import styles from '../styles/ProjectCard.module.css'; 
-import modalStyles from '../styles/Modal.module.css'; // 모달 스타일 import
+import modalStyles from '../styles/Modal.module.css'; 
 
 const ProjectCard = ({ title, description, imagePath, linkText, detailedDescription }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     
-    // imagePath가 배열이 아닐 경우 배열로 변환 (모달 이미지 갤러리용)
     const imagePaths = Array.isArray(imagePath) ? imagePath : [imagePath];
     const thumbnailPath = imagePaths[0];
     const isPlaceholder = !thumbnailPath;
@@ -22,9 +21,9 @@ const ProjectCard = ({ title, description, imagePath, linkText, detailedDescript
 
     return (
         <>
-            {/* Project Card (메인 레이아웃) */}
+           
             <div className={styles.projectCard}>
-                {/* 이미지 영역 */}
+                
                 <div className={styles.imageContainer}>
                     {isPlaceholder ? (
                         <div className={styles.placeholderImage}>{title}</div>
@@ -45,7 +44,7 @@ const ProjectCard = ({ title, description, imagePath, linkText, detailedDescript
                 </div>
             </div>
 
-            {/* 프로젝트 상세 정보 모달 */}
+          
             {isModalOpen && (
                 <div className={modalStyles.modalOverlay} onClick={closeModal}>
                     <div className={modalStyles.modalContent} onClick={(e) => e.stopPropagation()}>
@@ -53,8 +52,8 @@ const ProjectCard = ({ title, description, imagePath, linkText, detailedDescript
                         
                         <h3 className={modalStyles.modalTitle}>{title}</h3>
                         
-                        {/* 이미지 갤러리 섹션 */}
-                        {imagePaths.filter(path => path).length > 0 && ( // 유효한 경로만 필터링
+                        
+                        {imagePaths.filter(path => path).length > 0 && ( 
                             <>
                                 <h4 className={modalStyles.subtitle}>프로젝트 스크린샷</h4>
                                 <div className={modalStyles.galleryWrapper}>

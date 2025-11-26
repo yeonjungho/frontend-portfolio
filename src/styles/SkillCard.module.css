@@ -1,4 +1,4 @@
-/* src/styles/SkillCard.module.css */
+
 .skillCard {
     border: 1px solid #e5e7eb; 
     border-radius: 12px; 
@@ -13,7 +13,7 @@
 
 .skillCard:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15); /* 호버 시 강조색 그림자 */
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15); 
 }
 
 .imageContainer {
@@ -27,7 +27,7 @@
 }
 
 .skillImage {
-    max-width: 80px; /* 로고 크기 조정 */
+    max-width: 80px;
     max-height: 80px;
     object-fit: contain;
 }
@@ -64,7 +64,7 @@
     line-height: 1.5;
 }
 .skillContent {
-    /* 💡 수정: 패딩을 20px에서 25px로 증가 */
+    
     padding: 25px; 
     flex-grow: 1;
     display: flex;
@@ -72,15 +72,15 @@
 }
 
 .skillTitle {
-    margin: 0 0 12px 0; /* 제목 아래 간격 증가 */
-    font-size: 1.3em; /* 폰트 크기 미세 증가 */
+    margin: 0 0 12px 0; 
+    font-size: 1.3em; 
     font-weight: 700;
     color: #1e3a8a;
 }
 
 .skillDescription {
     margin: 0;
-    font-size: 1em; /* 폰트 크기 0.9em에서 1em으로 증가 */
+    font-size: 1em; 
     color: #6b7280;
-    line-height: 1.6; /* 줄 간격 증가 */
+    line-height: 1.6; 
 }

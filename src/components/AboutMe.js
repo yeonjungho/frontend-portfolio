@@ -1,10 +1,9 @@
-// src/components/AboutMe.js
 import React from 'react';
 import styles from '../styles/AboutMe.module.css';
-import sectionStyles from '../styles/Section.module.css'; // 공통 스타일 import
+import sectionStyles from '../styles/Section.module.css'; 
 
 const AboutMe = () => {
-    const characterImagePath = '/한교동.png'; 
+    const characterImagePath = '/증사1.jpeg'; 
 
     return (
         <section className={sectionStyles.sectionContainer} id="about">
@@ -14,14 +13,14 @@ const AboutMe = () => {
                     <div className={styles.imageContainer}>
                         <img 
                             src={characterImagePath} 
-                            alt="연정호 프로필 사진 (한교동)" 
+                            alt="연정호 프로필 사진 " 
                             className={styles.characterImage} 
                         />
                     </div>
                     <div className={styles.introduction}>
                         <h3 className={styles.introTitle}>Frontend & Backend Developer</h3>
                         <p className={styles.introSummary}>
-                            새로운 기술에 대한 도전을 즐기며, 사용자 경험을 최적화하는 것에 흥미를 느낍니다. 
+                            대학을 다니며 크고 작은 프로젝트의 경험으로 프론트 엔드와 백엔드, 데이터베이스에 대한 전반적인 지식을 가지고 있으며, 앞으로 팀원들과 소통하며 앞으로 나아가고 싶은 연정호입니다.
                         
                         </p>
                         <div className={styles.infoGrid}>

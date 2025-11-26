@@ -3,7 +3,7 @@ import SkillCard from './SkillCard'; //
 import styles from '../styles/SkillSection.module.css';
 import sectionStyles from '../styles/Section.module.css';
 
-// 스킬 데이터를 배열로 정의 (기존 데이터 유지)
+
 const skillsData = [
     { title: 'Java', description: 'JDBC 개념 이해 및 데이터베이스 연동, 간단한 투표 앱 구현.', imagePath: '/자바.png' },
     { title: 'Python', description: '파이썬의 동작 구조 이해 및 AI 챗봇 개발에 사용', imagePath: '/파이썬.png' },

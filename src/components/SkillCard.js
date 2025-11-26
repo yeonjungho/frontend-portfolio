@@ -4,7 +4,7 @@ import styles from '../styles/SkillCard.module.css';
 const SkillCard = ({ title, description, imagePath }) => {
     return (
         <div className={styles.skillCard}>
-            {/* 이미지 영역 */}
+           
             {imagePath ? (
                 <div className={styles.imageContainer}>
                     <img 
@@ -19,7 +19,7 @@ const SkillCard = ({ title, description, imagePath }) => {
                 </div>
             )}
             
-            {/* 텍스트 컨텐츠 영역 */}
+            
             <div className={styles.skillContent}>
                 <h4 className={styles.skillTitle}>{title}</h4>
                 <p className={styles.skillDescription}>{description}</p>

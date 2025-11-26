@@ -1,12 +1,12 @@
-// src/App.js
+
 import React from 'react';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
-// 💡 추가
+
 import IntroductionText from './components/IntroductionText'; 
 import SkillSection from './components/SkillSection';
 import ProjectSection from './components/ProjectSection';
-import './styles/global.css'; // 기본 스타일
+import './styles/global.css'; 
 
 const App = () => {
     return (
@@ -17,7 +17,7 @@ const App = () => {
                     <AboutMe />
                 </section>
                 
-                {/* 💡 추가: AboutMe와 SkillSection 사이에 새로운 섹션 삽입 */}
+                
                 <section id="intro">
                     <IntroductionText /> 
                 </section>
