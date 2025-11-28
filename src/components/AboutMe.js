@@ -28,6 +28,7 @@ const AboutMe = () => {
                             <p><span className={styles.label}>연락처</span>: 010-7518-9927</p>
                             <p><span className={styles.label}>이메일</span>: duswjdgh0617@naver.com</p>
                             <p><span className={styles.label}>학력</span>: 인하공업전문대학 졸업예정</p>
+                            <p><span className={styles.label}>자격증</span>: 정보처리산업기사 필기</p>
                         </div>
                     </div>
                 </div>
